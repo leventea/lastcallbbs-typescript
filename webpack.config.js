@@ -1,4 +1,5 @@
 const path = require('path');
+const installer = require('./webpack/installerPlugin.js');
 
 const config = {
     target: 'es5',
@@ -23,6 +24,9 @@ const config = {
     resolve: {
         extensions: ['.tsx', '.ts', '.jsx', '.js', '...'],
     },
+    plugins: [
+        new installer()
+    ],
     output: {
         iife: false,
         chunkFormat: 'module',
