@@ -10,7 +10,7 @@ This repository contains scaffolding (along with some added convenience) which m
 
 ## Automatic installation for development
 
-When the `SERVER_DEST` environment variable is set, webpack will attempt to copy the bundle to the specified location. 
+When the `SERVER_DEST` environment variable is set, rollup will attempt to copy the bundle to the specified location. 
 On Linux, the servers folder can be found under `~/.local/share/Last Call BBS/<steamid64>/`.
 
 
