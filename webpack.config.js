@@ -2,6 +2,7 @@ const path = require('path');
 
 const config = {
     target: 'es5',
+    mode: 'production',
     entry: './src/index.ts',
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -39,7 +40,4 @@ const config = {
     }
 };
 
-module.exports = () => {
-    config.mode = 'production';
-    return config;
-};
+module.exports = config
